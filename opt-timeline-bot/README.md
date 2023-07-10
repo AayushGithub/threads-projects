@@ -1,4 +1,4 @@
-# OPT Timeline Bot
+# [OPT Timeline Bot](https://www.threads.net/@opttimeline)
 
 The OPT Timeline Bot is a project within the Threads-Projects repository. It enables users to track F1 OPT case statuses efficiently and receive updates on Meta's Threads.net platform.
 

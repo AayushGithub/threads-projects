@@ -1,4 +1,4 @@
-# Fortune Cookie Bot
+# [Fortune Cookie Bot](https://www.threads.net/@fortune_cookie_bot)
 
 The Fortune Cookie Bot is a project within the Threads-Projects repository. It aims to provide valuable insights and a daily dose of wisdom to users of Meta's Threads.net platform.
 
