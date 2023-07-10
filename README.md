@@ -26,7 +26,7 @@ The Fortune Cookie Bot is one of the projects within the Threads-Projects reposi
 - Threads Unofficial API: A reverse-engineered Node.js/TypeScript client for Threads.
 
 #### Code
-The source code for the Fortune Cookie Bot can be found in the [fortune-cookie-bot](https://github.com/your-username/threads-projects/tree/main/fortune-cookie-bot) directory of the repository. The project is built using Node.js and Express, providing a lightweight web server that exposes two endpoints. One endpoint, `/post`, triggers the bot to fetch advice from the Advice Slip API, retrieve a random image from a list of sources, and publish both the advice and the image to Threads.net. The other endpoint, `/`, serves a simple "Hello world!" message.
+The source code for the Fortune Cookie Bot can be found in the [fortune-cookie-bot](https://github.com/AayushGithub/threads-projects/tree/main/fortune-cookie-bot) directory of the repository. The project is built using Node.js and Express, providing a lightweight web server that exposes two endpoints. One endpoint, `/post`, triggers the bot to fetch advice from the Advice Slip API, retrieve a random image from a list of sources, and publish both the advice and the image to Threads.net. The other endpoint, `/`, serves a simple "Hello world!" message.
 
 ### [OPT Timeline Bot](https://www.threads.net/@opttimeline)
 
@@ -43,7 +43,7 @@ The OPT Timeline Bot is another project within the Threads-Projects repository. 
 - Threads Unofficial API: A reverse-engineered Node.js/TypeScript client for Threads.
 
 #### Code
-The source code for the OPT Timeline Bot can be found in the [opt-timeline-bot](https://github.com/your-username/threads-projects/tree/main/opt-timeline-bot) directory of the repository. Similar to the Fortune Cookie Bot, this project is built using Node.js and Express. It provides two endpoints: `/post`, which triggers the bot to scrape the OPT Timeline website and publish updates to Threads.net, and `/`, which serves a basic "Hello world!" message.
+The source code for the OPT Timeline Bot can be found in the [opt-timeline-bot](https://github.com/AayushGithub/threads-projects/tree/main/opt-timeline-bot) directory of the repository. Similar to the Fortune Cookie Bot, this project is built using Node.js and Express. It provides two endpoints: `/post`, which triggers the bot to scrape the OPT Timeline website and publish updates to Threads.net, and `/`, which serves a basic "Hello world!" message.
 
 ## Deployment
 Both projects are deployed using Vercel, a cloud platform for static and serverless deployment. Vercel allows for seamless deployment and hosting of Node.js applications. The live versions of the projects can be accessed at the following URLs:
