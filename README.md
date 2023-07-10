@@ -3,6 +3,10 @@
 ## Overview
 Threads-Projects is a repository that houses projects built around Meta's Threads.net platform. These projects utilize the Threads Unofficial API, a reverse-engineered Node.js/TypeScript client for Threads (see [Credits](#credits) for more information). The repository aims to showcase the capabilities of Threads and provide useful functionalities for Threads.net users.
 
+<p align="center">
+<img width="600" height="auto" src="https://github.com/AayushGithub/threads-projects/assets/66742440/df624592-1420-497e-bb45-3c4ad483c6ba">
+</p>
+
 ## <img width="25" height="25" src="https://github.com/AayushGithub/threads-projects/assets/66742440/c2a25b6d-658b-48b0-99bb-f3fdf5eac95e"> Meta Threads 
 
 [Threads.net](https://threads.net/) is an online social media and social networking service owned by Meta Platforms. It operates in a similar manner to other microblogging platforms like Twitter. Users have the ability to post and share text, images, and videos, as well as interact with other users' posts through replies, reposts, and likes. Threads is closely integrated with Instagram, requiring users to have an Instagram account and use the same handle. While the mobile applications for iOS and Android devices offer full functionality, the web version provides limited features. The Unofficial Threads API aims to bridge this gap by providing a reverse-engineered Node.js/TypeScript client for Threads.
