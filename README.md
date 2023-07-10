@@ -17,13 +17,14 @@ Threads-Projects is a repository that houses projects built around Meta's Thread
 <p align="center">
 <img width="300" height="auto" src="https://github.com/AayushGithub/threads-projects/assets/66742440/d1f52c22-515c-48df-b226-23176dcdda01">
 </p>
+
 The Fortune Cookie Bot is one of the projects within the Threads-Projects repository. The motivation behind this project is to provide Threads.net users with valuable insights and a daily dose of wisdom. The bot leverages the [Advice Slip API](https://api.adviceslip.com/advice) to fetch interesting advice and pairs it with a random image from various sources. The bot then posts the advice and the corresponding image on Meta's Threads.net platform.
 
 #### Technologies and Dependencies
-- Node.js: A JavaScript runtime environment.
-- Express: A web application framework for Node.js.
-- Axios: A promise-based HTTP client for making API requests.
-- Threads Unofficial API: A reverse-engineered Node.js/TypeScript client for Threads.
+- **Node.js**: A JavaScript runtime environment.
+- **Express**: A web application framework for Node.js.
+- **Axios**: A promise-based HTTP client for making API requests.
+- **Threads Unofficial API**: A reverse-engineered Node.js/TypeScript client for Threads.
 
 #### Code
 The source code for the Fortune Cookie Bot can be found in the [fortune-cookie-bot](https://github.com/AayushGithub/threads-projects/tree/main/fortune-cookie-bot) directory of the repository. The project is built using Node.js and Express, providing a lightweight web server that exposes two endpoints. One endpoint, `/post`, triggers the bot to fetch advice from the Advice Slip API, retrieve a random image from a list of sources, and publish both the advice and the image to Threads.net. The other endpoint, `/`, serves a simple "Hello world!" message.
@@ -37,10 +38,10 @@ The source code for the Fortune Cookie Bot can be found in the [fortune-cookie-b
 The OPT Timeline Bot is another project within the Threads-Projects repository. This project addresses the need to track F1 OPT case statuses efficiently. It accomplishes this by scraping the [OPT Timeline](https://opttimeline.com/IOE?CASE_TY=EAD) website and posting updates on Meta's Threads.net platform.
 
 #### Technologies and Dependencies
-- Node.js: A JavaScript runtime environment.
-- Express: A web application framework for Node.js.
-- Axios: A promise-based HTTP client for making API requests.
-- Threads Unofficial API: A reverse-engineered Node.js/TypeScript client for Threads.
+- **Node.js**: A JavaScript runtime environment.
+- **Express**: A web application framework for Node.js.
+- **Axios**: A promise-based HTTP client for making API requests.
+- **Threads Unofficial API**: A reverse-engineered Node.js/TypeScript client for Threads.
 
 #### Code
 The source code for the OPT Timeline Bot can be found in the [opt-timeline-bot](https://github.com/AayushGithub/threads-projects/tree/main/opt-timeline-bot) directory of the repository. Similar to the Fortune Cookie Bot, this project is built using Node.js and Express. It provides two endpoints: `/post`, which triggers the bot to scrape the OPT Timeline website and publish updates to Threads.net, and `/`, which serves a basic "Hello world!" message.
@@ -51,17 +52,15 @@ Both projects are deployed using Vercel, a cloud platform for static and serverl
 - OPT Timeline Bot: [https://opt-timeline-bot.vercel.app/](https://opt-timeline-bot.vercel.app/)
 
 ## Credits
-- Threads Unofficial API: [https://github.com/junhoyeo/threads-api](https://github.com/junhoyeo/threads-api) (A reverse-engineered Node.js/TypeScript client for Threads)
-<p align="left">
-  <img width="400px" height="auto" src="https://github.com/AayushGithub/threads-projects/assets/66742440/ac52c101-2658-4ff4-80d4-26052be26746">
-</p>
-
-- Advice Slip API: [https://api.adviceslip.com/advice](https://api.adviceslip.com/advice) (API for fetching advice slips)
+- **Threads Unofficial API**: [https://github.com/junhoyeo/threads-api](https://github.com/junhoyeo/threads-api) (Major Thanks to [@junhoyeo](https://github.com/junhoyeo) for the work on this project - a reverse-engineered Node.js/TypeScript client for Threads) <p align="center">
+  <img width="350" height="auto" src="https://github.com/AayushGithub/threads-projects/assets/66742440/cf135ca9-6530-48a0-9d06-9c8def1ee718"> </p>
+  
+- **Advice Slip API**: [https://api.adviceslip.com/advice](https://api.adviceslip.com/advice) (API for fetching advice slips)
 - List of Random Image Sources:
-  - Cat Image (Catass): [https://cataas.com/](https://cataas.com/)
-  - PlaceKitten: [https://placekitten.com/](https://placekitten.com/)
-  - Dog CEO API: [https://dog.ceo/dog-api/](https://dog.ceo/dog-api/)
-  - Random Dog: [https://random.dog/](https://random.dog/)
-  - Random Fox: [https://randomfox.ca/](https://randomfox.ca/)
-  - Shibe Online: [https://shibe.online/](https://shibe.online/)
-- OPT Timeline: [https://opttimeline.com/IOE?CASE_TY=EAD](https://opttimeline.com/IOE?CASE_TY=EAD) (Website for tracking F1 OPT case statuses)
+  - **Cat Image (Catass)**: [https://cataas.com/](https://cataas.com/)
+  - **PlaceKitten**: [https://placekitten.com/](https://placekitten.com/)
+  - **Dog CEO API**: [https://dog.ceo/dog-api/](https://dog.ceo/dog-api/)
+  - **Random Dog**: [https://random.dog/](https://random.dog/)
+  - **Random Fox**: [https://randomfox.ca/](https://randomfox.ca/)
+  - **Shibe Online**: [https://shibe.online/](https://shibe.online/)
+- **OPT Timeline**: [https://opttimeline.com/IOE?CASE_TY=EAD](https://opttimeline.com/IOE?CASE_TY=EAD) (Website for tracking F1 OPT case statuses)
