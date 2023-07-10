@@ -11,7 +11,6 @@ on:
 
 jobs:
   deploy-opt-timeline-bot:
-    if: ${{ github.event_name == 'push' && contains(github.event.paths, 'opt-timeline-bot/') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
