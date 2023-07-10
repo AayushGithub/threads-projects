@@ -1,0 +1,1 @@
+"use strict";function e(e,t){return Object.keys(e).forEach(function(r){"default"===r||Object.prototype.hasOwnProperty.call(t,r)||Object.defineProperty(t,r,{enumerable:!0,get:function(){return e[r]}})}),e}e(require("./threads-api"),exports),e(require("./threads-types"),exports);

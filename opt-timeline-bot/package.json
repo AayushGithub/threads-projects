@@ -1,0 +1,19 @@
+{
+  "name": "opt-timeline-bot",
+  "version": "1.0.0",
+  "description": "Tracks F1 OPT case statuses by scraping the OPT-Timeline website (https://opttimeline.com/IOE?CASE_TY=EAD) and post updates on Meta's Threads.net",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "AayushGithub",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jssoup": "^0.0.15",
+    "threads-api": "^1.2.0"
+  }
+}

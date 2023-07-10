@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"fetch",{enumerable:!0,get:function(){return e}});var e=globalThis.fetch;
