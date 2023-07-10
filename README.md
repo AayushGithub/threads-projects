@@ -3,12 +3,16 @@
 ## Overview
 Threads-Projects is a repository that houses projects built around Meta's Threads.net platform. These projects utilize the Threads Unofficial API, a reverse-engineered Node.js/TypeScript client for Threads (see [Credits](#credits) for more information). The repository aims to showcase the capabilities of Threads and provide useful functionalities for Threads.net users.
 
-## Meta's Threads
+## <img width="25" height="25" src="https://github.com/AayushGithub/threads-projects/assets/66742440/c2a25b6d-658b-48b0-99bb-f3fdf5eac95e"> Meta Threads 
+
 [Threads.net](https://threads.net/) is an online social media and social networking service owned by Meta Platforms. It operates in a similar manner to other microblogging platforms like Twitter. Users have the ability to post and share text, images, and videos, as well as interact with other users' posts through replies, reposts, and likes. Threads is closely integrated with Instagram, requiring users to have an Instagram account and use the same handle. While the mobile applications for iOS and Android devices offer full functionality, the web version provides limited features. The Unofficial Threads API aims to bridge this gap by providing a reverse-engineered Node.js/TypeScript client for Threads.
 
 ## Projects
 
 ### [Fortune Cookie Bot](https://www.threads.net/@fortune_cookie_bot)
+<p align="center">
+<img width="300" height="auto" src="https://github.com/AayushGithub/threads-projects/assets/66742440/d1f52c22-515c-48df-b226-23176dcdda01">
+</p>
 The Fortune Cookie Bot is one of the projects within the Threads-Projects repository. The motivation behind this project is to provide Threads.net users with valuable insights and a daily dose of wisdom. The bot leverages the [Advice Slip API](https://api.adviceslip.com/advice) to fetch interesting advice and pairs it with a random image from various sources. The bot then posts the advice and the corresponding image on Meta's Threads.net platform.
 
 #### Technologies and Dependencies
@@ -21,6 +25,11 @@ The Fortune Cookie Bot is one of the projects within the Threads-Projects reposi
 The source code for the Fortune Cookie Bot can be found in the [fortune-cookie-bot](https://github.com/your-username/threads-projects/tree/main/fortune-cookie-bot) directory of the repository. The project is built using Node.js and Express, providing a lightweight web server that exposes two endpoints. One endpoint, `/post`, triggers the bot to fetch advice from the Advice Slip API, retrieve a random image from a list of sources, and publish both the advice and the image to Threads.net. The other endpoint, `/`, serves a simple "Hello world!" message.
 
 ### [OPT Timeline Bot](https://www.threads.net/@opttimeline)
+
+<p align="center">
+  <img width="350" height="auto" src="https://github.com/AayushGithub/threads-projects/assets/66742440/e2912a4d-2aac-4462-8112-84d886a436b4">
+</p>
+
 The OPT Timeline Bot is another project within the Threads-Projects repository. This project addresses the need to track F1 OPT case statuses efficiently. It accomplishes this by scraping the [OPT Timeline](https://opttimeline.com/IOE?CASE_TY=EAD) website and posting updates on Meta's Threads.net platform.
 
 #### Technologies and Dependencies
@@ -39,6 +48,10 @@ Both projects are deployed using Vercel, a cloud platform for static and serverl
 
 ## Credits
 - Threads Unofficial API: [https://github.com/junhoyeo/threads-api](https://github.com/junhoyeo/threads-api) (A reverse-engineered Node.js/TypeScript client for Threads)
+<p align="left">
+  <img width="400px" height="auto" src="https://github.com/AayushGithub/threads-projects/assets/66742440/ac52c101-2658-4ff4-80d4-26052be26746">
+</p>
+
 - Advice Slip API: [https://api.adviceslip.com/advice](https://api.adviceslip.com/advice) (API for fetching advice slips)
 - List of Random Image Sources:
   - Cat Image (Catass): [https://cataas.com/](https://cataas.com/)
