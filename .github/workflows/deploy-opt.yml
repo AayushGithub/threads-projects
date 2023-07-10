@@ -1,0 +1,37 @@
+name: Deploy to Vercel Production (OPT Timeline Bot)
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID_OPT }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_OPT }}
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'opt-timeline-bot/**'
+
+jobs:
+  deploy-opt-timeline-bot:
+    if: ${{ github.event_name == 'push' && contains(github.event.paths, 'opt-timeline-bot/') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install OPT Timeline Bot dependencies
+        working-directory: opt-timeline-bot
+        run: npm ci
+      - name: Install Vercel CLI
+        working-directory: opt-timeline-bot
+        run: npm install --global vercel@latest
+      - name: Pull Vercel Environment Information
+        working-directory: opt-timeline-bot
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Build Project Artifacts
+        working-directory: opt-timeline-bot
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Deploy Project Artifacts to Vercel
+        working-directory: opt-timeline-bot
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}

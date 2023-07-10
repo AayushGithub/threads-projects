@@ -1,0 +1,37 @@
+name: Deploy to Vercel Production (Fortune Cookie Bot)
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID_FORTUNE }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID_FORTUNE }}
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'fortune-cookie-bot/**'
+
+jobs:
+  deploy-fortune-cookie-bot:
+    if: ${{ github.event_name == 'push' && contains(github.event.paths, 'fortune-cookie-bot/') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install Fortune Cookie Bot dependencies
+        working-directory: fortune-cookie-bot
+        run: npm ci
+      - name: Install Vercel CLI
+        working-directory: fortune-cookie-bot
+        run: npm install --global vercel@latest
+      - name: Pull Vercel Environment Information
+        working-directory: fortune-cookie-bot
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Build Project Artifacts
+        working-directory: fortune-cookie-bot
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Deploy Project Artifacts to Vercel
+        working-directory: fortune-cookie-bot
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
