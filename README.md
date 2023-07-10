@@ -8,7 +8,7 @@ Threads-Projects is a repository that houses projects built around Meta's Thread
 
 ## Projects
 
-### Fortune Cookie Bot
+### [Fortune Cookie Bot](https://www.threads.net/@fortune_cookie_bot)
 The Fortune Cookie Bot is one of the projects within the Threads-Projects repository. The motivation behind this project is to provide Threads.net users with valuable insights and a daily dose of wisdom. The bot leverages the [Advice Slip API](https://api.adviceslip.com/advice) to fetch interesting advice and pairs it with a random image from various sources. The bot then posts the advice and the corresponding image on Meta's Threads.net platform.
 
 #### Technologies and Dependencies
@@ -20,7 +20,7 @@ The Fortune Cookie Bot is one of the projects within the Threads-Projects reposi
 #### Code
 The source code for the Fortune Cookie Bot can be found in the [fortune-cookie-bot](https://github.com/your-username/threads-projects/tree/main/fortune-cookie-bot) directory of the repository. The project is built using Node.js and Express, providing a lightweight web server that exposes two endpoints. One endpoint, `/post`, triggers the bot to fetch advice from the Advice Slip API, retrieve a random image from a list of sources, and publish both the advice and the image to Threads.net. The other endpoint, `/`, serves a simple "Hello world!" message.
 
-### OPT Timeline Bot
+### [OPT Timeline Bot](https://www.threads.net/@opttimeline)
 The OPT Timeline Bot is another project within the Threads-Projects repository. This project addresses the need to track F1 OPT case statuses efficiently. It accomplishes this by scraping the [OPT Timeline](https://opttimeline.com/IOE?CASE_TY=EAD) website and posting updates on Meta's Threads.net platform.
 
 #### Technologies and Dependencies
