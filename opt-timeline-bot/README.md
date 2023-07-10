@@ -8,10 +8,10 @@ The OPT Timeline Bot addresses the need for a streamlined process to track F1 OP
 
 ## Technologies and Dependencies
 
-- Node.js: A JavaScript runtime environment.
-- Express: A web application framework for Node.js.
-- Axios: A promise-based HTTP client for making API requests.
-- Threads Unofficial API: A reverse-engineered Node.js/TypeScript client for Threads.
+- **Node.js**: A JavaScript runtime environment.
+- **Express**: A web application framework for Node.js.
+- **Axios**: A promise-based HTTP client for making API requests.
+- **Threads Unofficial API**: A reverse-engineered Node.js/TypeScript client for Threads.
 
 ## How to Use
 
@@ -31,5 +31,5 @@ export PORT="your-port-number"
 
 ## Credits
 
-- Threads Unofficial API: [https://github.com/junhoyeo/threads-api](https://github.com/junhoyeo/threads-api)
-- OPT Timeline: [https://opttimeline.com/IOE?CASE_TY=EAD](https://opttimeline.com/IOE?CASE_TY=EAD)
+- **Threads Unofficial API**: [https://github.com/junhoyeo/threads-api](https://github.com/junhoyeo/threads-api)
+- **OPT Timeline**: [https://opttimeline.com/IOE?CASE_TY=EAD](https://opttimeline.com/IOE?CASE_TY=EAD)

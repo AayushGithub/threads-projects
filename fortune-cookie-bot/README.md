@@ -8,10 +8,10 @@ The Fortune Cookie Bot was developed to enhance the Threads.net user experience 
 
 ## Technologies and Dependencies
 
-- Node.js: A JavaScript runtime environment.
-- Express: A web application framework for Node.js.
-- Axios: A promise-based HTTP client for making API requests.
-- Threads Unofficial API: A reverse-engineered Node.js/TypeScript client for Threads.
+- **Node.js**: A JavaScript runtime environment.
+- **Express**: A web application framework for Node.js.
+- **Axios**: A promise-based HTTP client for making API requests.
+- **Threads Unofficial API**: A reverse-engineered Node.js/TypeScript client for Threads.
 
 ## How to Use
 
@@ -31,13 +31,13 @@ export PORT="your-port-number"
 
 ## Credits
 
-- Threads Unofficial API: [https://github.com/junhoyeo/threads-api](https://github.com/junhoyeo/threads-api)
-- Advice Slip API: [https://api.adviceslip.com/advice](https://api.adviceslip.com/advice)
+- **Threads Unofficial API**: [https://github.com/junhoyeo/threads-api](https://github.com/junhoyeo/threads-api)
+- **Advice Slip API**: [https://api.adviceslip.com/advice](https://api.adviceslip.com/advice)
 - List of Random Image Sources:
-  - Cat Image (Catass): [https://cataas.com/](https://cataas.com/)
-  - PlaceKitten: [https://placekitten.com/](https://placekitten.com/)
-  - Dog CEO API: [https://dog.ceo/dog-api/](https://dog.ceo/dog-api/)
-  - Random Dog: [https://random.dog/](https://random.dog/)
-  - Random Fox: [https://randomfox.ca/](https://randomfox.ca/)
-  - Shibe Online: [https://shibe.online/](https://shibe.online/)
+  - **Cat Image (Catass)**: [https://cataas.com/](https://cataas.com/)
+  - **PlaceKitten**: [https://placekitten.com/](https://placekitten.com/)
+  - **Dog CEO API**: [https://dog.ceo/dog-api/](https://dog.ceo/dog-api/)
+  - **Random Dog**: [https://random.dog/](https://random.dog/)
+  - **Random Fox**: [https://randomfox.ca/](https://randomfox.ca/)
+  - **Shibe Online**: [https://shibe.online/](https://shibe.online/)
 
