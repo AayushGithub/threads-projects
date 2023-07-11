@@ -46,6 +46,40 @@ The OPT Timeline Bot is another project within the Threads-Projects repository. 
 #### Code
 The source code for the OPT Timeline Bot can be found in the [opt-timeline-bot](https://github.com/AayushGithub/threads-projects/tree/main/opt-timeline-bot) directory of the repository. Similar to the Fortune Cookie Bot, this project is built using Node.js and Express. It provides two endpoints: `/post`, which triggers the bot to scrape the OPT Timeline website and publish updates to Threads.net, and `/`, which serves a basic "Hello world!" message.
 
+### [Thread Count](https://www.thread-count.vercel.app/)
+
+<a href="https://www.threads.net/@fortune_cookie_bot"><img src="https://thread-count.vercel.app/thread-count/fortune_cookie_bot?label=Thread Count Fortune Cookie Bot" alt="Fortune Cookie Bot Badge"></a>
+<a href="https://www.threads.net/@opttimeline"><img src="https://thread-count.vercel.app/thread-count/opttimeline?labelColor=white&label=Thread Count OPT Timeline" alt="OPT Timeline Badge"></a>
+
+The Thread Count API was created to provide an easy way for users to showcase their Threads.net follower counts using customizable status badges. Whether you want to display your follower count on your personal blog, project documentation, or social media profiles, this API enables you to generate visually appealing badges that suit your preferences.
+
+## Technologies and Dependencies
+
+The Thread Count API is built using the following technologies:
+
+- **Node.js**: A JavaScript runtime environment.
+- **Express.js**: A fast and minimalist web framework for Node.js.
+- **Threads Unofficial API**: A reverse-engineered Node.js/TypeScript client for Threads.
+- **Badgen**: A library for generating SVG badges.
+- **Gradient Badge**: A library for applying gradients to badges.
+- **Swagger UI Express**: A middleware for rendering Swagger UI documentation.
+
+#### Code
+The source code for the Thread Count can be found in the [thread-count](https://github.com/AayushGithub/threads-projects/tree/main/thread-count) directory of the repository. Similar to the Fortune Cookie Bot, this project is built using Node.js and Express. It provides one endpoint: `/thread-count/:username`, which triggers the bot to fetch the follower count for the specified username and generate a badge displaying the count.
+
+#### Parameters
+
+The `/thread-count/:username` endpoint supports the following query parameters:
+
+- `color` (optional): The color of the badge. Default: `blue`.
+- `style` (optional): The style of the badge. Default: `flat`.
+- `width` (optional): The width of the badge icon. Default: `13`.
+- `scale` (optional): The scale of the badge. Default: `1`.
+- `labelColor` (optional): The color of the badge label. Default: `black`.
+- `icon` (optional): Whether to include the badge icon. Default: `true`.
+- `label` (optional): The label text for the badge. Default: `Thread Count`.
+- `gradient` (optional): Whether to apply a gradient to the badge. Default: `true`.
+
 ## Deployment
 Both projects are deployed using Vercel, a cloud platform for static and serverless deployment. Vercel allows for seamless deployment and hosting of Node.js applications. The live versions of the projects can be accessed at the following URLs:
 - Fortune Cookie Bot: [https://fortune-cookie-bot.vercel.app/](https://fortune-cookie-bot.vercel.app/)

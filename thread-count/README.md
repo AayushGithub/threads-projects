@@ -145,3 +145,10 @@ You can enable or disable the badge gradient (`true` is the default).
 | -------- | ---- |
 | `true (default)` | <a href="https://www.threads.net/@zuck"><img src="https://thread-count.vercel.app/thread-count/zuck" alt="Default Badge"></a> |
 | `false` | <a href="https://www.threads.net/@zuck"><img src="https://thread-count.vercel.app/thread-count/zuck?gradient=false" alt="No Gradient Badge"></a> |
+
+## Credits
+
+- **Threads Unofficial API**: [https://github.com/junhoyeo/threads-api](https://github.com/junhoyeo/threads-api)
+- **Badgen**: [https://github.com/badgen/badgen](https://github.com/badgen/badgen)
+- **Gradient Badge**: [https://github.com/bokub/gradient-badge](https://github.com/bokub/gradient-badge)
+- **Swagger UI Express**: [https://github.com/scottie1984/swagger-ui-express](https://github.com/scottie1984/swagger-ui-express)
