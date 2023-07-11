@@ -1,0 +1,28 @@
+{
+  "name": "thread-count",
+  "version": "1.0.0",
+  "description": "Custom status badges for Threads.net follower counts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AayushGithub/threads-projects.git"
+  },
+  "author": "AayushGithub",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AayushGithub/threads-projects/issues"
+  },
+  "homepage": "https://github.com/AayushGithub/threads-projects#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "badgen": "^3.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "gradient-badge": "^1.3.1",
+    "swagger-ui-express": "^5.0.0",
+    "threads-api": "^1.3.0"
+  }
+}
