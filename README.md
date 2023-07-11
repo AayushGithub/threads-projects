@@ -84,6 +84,7 @@ The `/thread-count/:username` endpoint supports the following query parameters:
 Both projects are deployed using Vercel, a cloud platform for static and serverless deployment. Vercel allows for seamless deployment and hosting of Node.js applications. The live versions of the projects can be accessed at the following URLs:
 - Fortune Cookie Bot: [https://fortune-cookie-bot.vercel.app/](https://fortune-cookie-bot.vercel.app/)
 - OPT Timeline Bot: [https://opt-timeline-bot.vercel.app/](https://opt-timeline-bot.vercel.app/)
+- Thread Count: [https://thread-count.vercel.app/](https://thread-count.vercel.app/)
 
 ## Credits
 - **Threads Unofficial API**: [https://github.com/junhoyeo/threads-api](https://github.com/junhoyeo/threads-api) (Major Thanks to [@junhoyeo](https://github.com/junhoyeo) for the work on this project - a reverse-engineered Node.js/TypeScript client for Threads) <p align="center">
@@ -98,3 +99,6 @@ Both projects are deployed using Vercel, a cloud platform for static and serverl
   - **Random Fox**: [https://randomfox.ca/](https://randomfox.ca/)
   - **Shibe Online**: [https://shibe.online/](https://shibe.online/)
 - **OPT Timeline**: [https://opttimeline.com/IOE?CASE_TY=EAD](https://opttimeline.com/IOE?CASE_TY=EAD) (Website for tracking F1 OPT case statuses)
+- **Badgen**: [https://github.com/badgen/badgen](https://github.com/badgen/badgen) (Library for generating SVG badges)
+- **Gradient Badge**: [https://github.com/bokub/gradient-badge](https://github.com/bokub/gradient-badge) (Library for applying gradients to badges)
+- **Swagger UI Express**: [https://github.com/scottie1984/swagger-ui-express](https://github.com/scottie1984/swagger-ui-express) (Middleware for rendering Swagger UI documentation)
