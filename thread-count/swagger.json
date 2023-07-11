@@ -1,0 +1,121 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Thread Count API",
+    "version": "1.0.0",
+    "description": "API for generating custom status badges for Instagram follower counts"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/thread-count/{username}": {
+      "get": {
+        "summary": "Generate status badge for Instagram follower count",
+        "parameters": [
+          {
+            "name": "username",
+            "in": "path",
+            "description": "Instagram username",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "color",
+            "in": "query",
+            "description": "Badge color",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "style",
+            "in": "query",
+            "description": "Badge style",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "width",
+            "in": "query",
+            "description": "Badge icon width",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "scale",
+            "in": "query",
+            "description": "Badge scale",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "labelColor",
+            "in": "query",
+            "description": "Badge label color",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "icon",
+            "in": "query",
+            "description": "Use badge icon",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "label",
+            "in": "query",
+            "description": "Badge label",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "gradient",
+            "in": "query",
+            "description": "Apply gradient to badge",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "image/svg+xml": {}
+            }
+          },
+          "400": {
+            "description": "Username not specified",
+            "content": {
+              "image/svg+xml": {}
+            }
+          },
+          "404": {
+            "description": "Username not found",
+            "content": {
+              "image/svg+xml": {}
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "content": {
+              "image/svg+xml": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}
