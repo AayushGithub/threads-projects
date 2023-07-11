@@ -55,6 +55,13 @@ The `/thread-count/:username` endpoint supports the following query parameters:
 
 ## Example Badges
 
+To use a badge in a markdown file, simply copy the markdown code and paste it into your file.
+```markdown
+<a href="https://www.threads.net/{your-username}">
+    <img src="https://thread-count.vercel.app/thread-count/{your-username}" alt="My Thread Count">
+</a> 
+```
+
 ### Color
 
 You can use any valid HEX color or pick from a predefined set of named colors (`blue` is the default if gradients is disabled).
