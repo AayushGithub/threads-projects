@@ -3,7 +3,7 @@ const { ThreadsAPI } = require("threads-api");
 const { badgen } = require("badgen");
 const { applyGradient } = require("gradient-badge");
 const swaggerUi = require("swagger-ui-express");
-const swaggerDocument = require("./public/swagger.json");
+const swaggerDocument = require("./swagger.json");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -17,7 +17,7 @@ const threadsAPI = new ThreadsAPI();
 const fs = require("fs");
 const path = require("path");
 const threadsColorSVG = fs.readFileSync(
-  path.join(__dirname, "public/threads-color.svg"),
+  path.join(__dirname, "./threads-color.svg"),
   "utf8"
 );
 const threadsColorBase64 = Buffer.from(threadsColorSVG).toString("base64");
@@ -95,7 +95,7 @@ app.get("/thread-count/:username", async (req, res) => {
     const labelColor = req.query.labelColor || "black";
     const useIcon = req.query.icon || true;
     const label = req.query.label || "Thread Count";
-    const gradient = req.query.gradient || true;
+    const gradient = req.query.gradient || "true";
     const gradientArray = ["FA7E1E", "D62976", "962FBF", "4F5DB5"];
     const badge = badgen({
       label: label,
@@ -105,12 +105,10 @@ app.get("/thread-count/:username", async (req, res) => {
       iconWidth: badgeWidth,
       scale: badgeScale,
       labelColor: labelColor,
-      icon: useIcon
-        ? `data:image/svg+xml;base64,${threadsColorBase64}`
-        : undefined,
+      icon: useIcon === "false" ? undefined : `data:image/svg+xml;base64,${threadsColorBase64}`,
     });
 
-    if (gradient) {
+    if (gradient === "true") {
       res.set("Content-Type", "image/svg+xml");
       const newBadge = applyGradient(badge, gradientArray);
       return res.status(200).send(newBadge);
@@ -127,7 +125,11 @@ app.get("/thread-count/:username", async (req, res) => {
       icon: `data:image/svg+xml;base64,${threadsColorBase64}`,
     });
     res.set("Content-Type", "image/svg+xml");
-    return res.status(500).send(defaultBadge);
+    if (error.message.includes("Username not found")) {
+      return res.status(404).send(defaultBadge);
+    } else {
+      return res.status(500).send(defaultBadge);
+    }
   }
 });
 
@@ -137,8 +139,12 @@ app.get("/", (req, res) => {
   res.redirect("/api-docs");
 });
 
+app.use((req, res, next) => {
+    res.status(404).send("404: Page not found");
+});
+
 app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
+  console.log(`Thread Count API listening at http://localhost:${port}`);
 });
 
 module.exports = app;
