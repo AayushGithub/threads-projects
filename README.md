@@ -48,9 +48,12 @@ The source code for the OPT Timeline Bot can be found in the [opt-timeline-bot](
 
 ### [Thread Count](https://www.thread-count.vercel.app/)
 
-<a href="https://www.threads.net/@fortune_cookie_bot"><img src="https://thread-count.vercel.app/thread-count/fortune_cookie_bot?label=Thread Count Fortune Cookie Bot" alt="Fortune Cookie Bot Badge"></a>
-<a href="https://www.threads.net/@opttimeline"><img src="https://thread-count.vercel.app/thread-count/opttimeline?labelColor=white&label=Thread Count OPT Timeline" alt="OPT Timeline Badge"></a>
+<div align="center">
 
+![ThreadCountFortune](https://thread-count.vercel.app/thread-count/fortune_cookie_bot?scale=3&Thread%20Count%20Fortune%20Cookie%20Bot)
+![ThreadCountOPT](https://thread-count.vercel.app/thread-count/opttimeline?labelColor=white&scale=3&Thread%20Count%20OPTTimeline)
+
+</div>
 The Thread Count API was created to provide an easy way for users to showcase their Threads.net follower counts using customizable status badges. Whether you want to display your follower count on your personal blog, project documentation, or social media profiles, this API enables you to generate visually appealing badges that suit your preferences.
 
 ## Technologies and Dependencies
