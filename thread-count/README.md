@@ -59,7 +59,11 @@ To use a badge in a markdown file, simply copy the markdown code and paste it in
 ```markdown
 <a href="https://www.threads.net/{your-username}">
     <img src="https://thread-count.vercel.app/thread-count/{your-username}" alt="My Thread Count">
-</a> 
+</a>
+
+OR
+
+![https://www.threads.net/{your-username}](https://thread-count.vercel.app/thread-count/{your-username})
 ```
 
 ### Color
@@ -98,13 +102,13 @@ You can use any valid width or pick from a predefined set of widths (`13` is the
 
 ### Scale
 
-You can use any valid scale or pick from a predefined set of scales (`1` is the default) (does not apply well in GitHub READMEs).
+You can use any valid scale or pick from a predefined set of scales (`1` is the default) (does not apply well in GitHub READMEs as image tags, only as link)
 
 | scale | demo |
 | ----- | ---- |
-| `1 (default)` | <a href="https://www.threads.net/@zuck"><img src="https://thread-count.vercel.app/thread-count/zuck?scale=1" alt="1x Badge"></a> |
-| `1.5` | <a href="https://www.threads.net/@zuck"><img src="https://thread-count.vercel.app/thread-count/zuck?scale=1" alt="1.5x Badge"></a> |
-| `2` | <a href="https://www.threads.net/@zuck"><img src="https://thread-count.vercel.app/thread-count/zuck?scale=1" alt="2x Badge"></a> |
+| `1 (default)` | ![https://www.threads.net/@zuck](https://thread-count.vercel.app/thread-count/zuck?scale=1) |
+| `1.5` | ![https://www.threads.net/@zuck](https://thread-count.vercel.app/thread-count/zuck?scale=1.5) |
+| `2` | ![https://www.threads.net/@zuck](https://thread-count.vercel.app/thread-count/zuck?scale=2) |
 
 ### Label Color
 
