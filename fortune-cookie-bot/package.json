@@ -12,6 +12,6 @@
     "axios": "^1.4.0",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "threads-api": "^1.2.0"
+    "threads-api": "^1.4.0"
   }
 }

@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost:3000"
+      "url": "http://thread-count.vercel.app"
     }
   ],
   "paths": {

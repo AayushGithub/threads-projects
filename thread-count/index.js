@@ -5,6 +5,7 @@ const { applyGradient } = require('gradient-badge');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 const NodeCache = require('node-cache');
+const { makeBadge, ValidationError } = require('badge-maker')
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -95,11 +96,24 @@ app.get('/thread-count/:username', async (req, res) => {
     const followerCountString = followerCount.toString();
     const badgeColor = req.query.color || 'blue';
     const badgeStyle = req.query.style || 'flat';
+    const label = req.query.label || 'Thread Count';
+    const labelColor = req.query.labelColor || 'black';
+    if (badgeStyle !== 'flat' && badgeStyle !== 'classic') {
+      const format = {
+        label: label,
+        message: followerCountString,
+        color: badgeColor,
+        labelColor: labelColor,
+        style: badgeStyle,
+        logo:'groupme'
+      }
+      const svg = makeBadge(format)
+      res.set('Content-Type', 'image/svg+xml');
+      return res.status(200).send(svg);
+    } else {
     const badgeWidth = req.query.width || 13;
     const badgeScale = req.query.scale || 1;
-    const labelColor = req.query.labelColor || 'black';
     const useIcon = req.query.icon || true;
-    const label = req.query.label || 'Thread Count';
     const gradient = req.query.gradient || 'true';
     const gradientArray = ['FA7E1E', 'D62976', '962FBF', '4F5DB5'];
     const badge = badgen({
@@ -121,6 +135,7 @@ app.get('/thread-count/:username', async (req, res) => {
       res.set('Content-Type', 'image/svg+xml');
       return res.status(200).send(badge);
     }
+  }
   } catch (error) {
     const defaultBadge = badgen({
       label: 'Thread Count',
