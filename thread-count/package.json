@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/AayushGithub/threads-projects#readme",
   "dependencies": {
-    "axios": "^1.4.0",
+    "axios": "^1.6.0",
     "badge-maker": "^3.3.1",
     "badgen": "^3.2.2",
     "cors": "^2.8.5",
